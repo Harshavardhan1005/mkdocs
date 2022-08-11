@@ -4,7 +4,7 @@ site_name: mkdocs
 nav:
   - Home: index.md
 
-site_author: harshavardhan Achyuta
+site_author: Harshavardhan Achyuta
 site_description: >-
   DESCRIPTION
 # Repository
