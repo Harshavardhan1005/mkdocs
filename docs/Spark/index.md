@@ -8,7 +8,7 @@ Data partitioning in Spark happens automatically, but there are times when manua
 
 The repartition method is used to increase or decrease the number of partitions in the data frame
 
-'''
+```
 # Import the necessary libraries
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
@@ -35,13 +35,13 @@ print("Number of partitions after repartitioning:", df_repartitioned.rdd.getNumP
 # Default number of partitions: 1
 # Number of partitions after repartitioning: 4
 
-'''
+```
 
 ## Coalesce
 
 The coalesce method is used to reduce the number of partitions in a data frame.
 
-'''
+```
 # Coalesce the DataFrame into 2 partitions
 df_coalesced = df.coalesce(2)
 
@@ -51,10 +51,10 @@ print("Number of partitions after coalescing:", df_coalesced.rdd.getNumPartition
 # Sample output after coalescing:
 # Number of partitions after coalescing: 2
 
-'''
+```
 Even if you try to increase the number of partitions with coalesce, it won't work !
 
-'''
+```
 # Coalesce the DataFrame into 4 partitions
 df_coalesced = df.coalesce(4)
 
@@ -63,6 +63,7 @@ print("Number of partitions after coalescing:", df_coalesced.rdd.getNumPartition
 
 # Sample output after coalescing:
 # Number of partitions after coalescing: 1
-'''
+
+```
 
 The repartition does a full shuffle of the data and creates equal-sized partitions of data. coalesce combine existing partitions to avoid a full shuffle
