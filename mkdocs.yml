@@ -1,0 +1,41 @@
+# Project information
+site_name: mkdocs
+site_author: Harsha
+site_description: >-
+  mkdocs template
+# Repository
+repo_name: Harshavardhan1005/mkdocs
+repo_url: https://github.com/Harshavardhan1005/mkdocs
+
+# Configuration
+theme:
+  name: material
+  features:
+    - tabs
+  language: en
+  palette:
+    primary: green
+    accent: green
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Harshavardhan1005/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/harshavardhan1005/
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+markdown_extensions:
+  - codehilite:
+      linenums: true
+  - admonition
+  - pymdownx.arithmatex
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.highlight
+
+copyright: |
+  &copy; 2020 <a href="https://github.com/Harshavardhan1005/"  target="_blank" rel="noopener">Harshavardhan Achyuta</a>
